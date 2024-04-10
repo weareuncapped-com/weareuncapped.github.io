@@ -23,8 +23,7 @@ email: rudy@weareuncapped.com
 description: >- # this means to ignore newlines until "baseurl:"
   Welcome to the Uncapped Engineering Blog! Here, we'll dive deep into the technical world of Uncapped, exploring how we're building innovative financial solutions for online businesses.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "engineering.weareuncapped.com" # the base hostname & protocol for your site, e.g. http://example.com
-#twitter_username: jekyllrb
+url: "https://engineering.weareuncapped.com" # the base hostname & protocol for your site, e.g. http://example.com
 github_username:  weareuncapped-com
 
 # Build settings
@@ -32,6 +31,18 @@ github_username:  weareuncapped-com
 remote_theme: "jeffreytse/jekyll-theme-yat"
 plugins:
   - jekyll-feed
+
+theme_color: snowwhite
+
+sitemap: true
+
+header_pages:
+  - index.html
+
+# Build settings
+markdown: kramdown
+# Pagination setting
+paginate: 10
 
 # Exclude from processing.
 # The following items will not be processed, by default.
