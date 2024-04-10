@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "We screwed up"
+title:  "A Commitment to Transparency and Improvement"
 date:   2024-04-10 18:27:00 +0200
 author: Kamil "Rudy" Dobrzynski
 banner: 
