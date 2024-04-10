@@ -1,7 +1,7 @@
 @charset "utf-8";
 
 // Define defaults for each variable.
-$base-font-family: Sora, sans-serif;
+$base-font-family: Comissioner, Arial, sans-serif;
 $base-font-size: 14px !default;
 $base-font-weight: 400 !default;
 $small-font-size: $base-font-size * 0.875 !default;
@@ -65,4 +65,5 @@ $on-laptop: 800px !default;
 "misc/common-list",
 "misc/google-translate",
 "misc/gitment",
-"misc/click-to-top";
+"misc/click-to-top",
+"custom-styles";
