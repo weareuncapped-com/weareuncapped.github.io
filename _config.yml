@@ -44,6 +44,8 @@ markdown: kramdown
 # Pagination setting
 paginate: 10
 
+google_analytics: G-KZCJ82TBF7
+
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to
