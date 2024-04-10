@@ -12,13 +12,13 @@ categories:
   - downtime
 ---
 ##  A Commitment to Transparency and Improvement 
-It’s been almost five years since we launched Uncapped, and we have never had an outage. However, good things can’t last forever, and last week, for the first time, we experienced a technical issue preventing customers from registering.
+It’s been almost five years since we launched [Uncapped](https://weareuncapped.com), and we have never had an outage. However, good things can’t last forever, and last week, for the first time, we experienced a technical issue preventing customers from registering.
 
 As we strive for complete transparency and a world-class engineering culture, we want to share what has happened and what we learned openly.
 
 ## Architecture overview
 
-Our system is based on a few microservices that run in a Google Kubernetes Engine cluster. Each service is available in 3 instances distributed to each zone.
+Our system is based on a few microservices that run in a [Google Kubernetes Engine](https://cloud.google.com/kubernetes-engine) cluster. Each service is available in 3 instances distributed to each zone.
 Each microservice is written in Java 21 and uses Spring underneath.
 Having multiple services has its pros and cons. One of the problems we used to have early on is keeping dependencies up to date. To deliver value and keep services up to date we rely on the opinionated starter-like (fans of Spring Boot will know the concept) library that provides capabilities like Observability or Messaging Autoconfigurations. A snapshot version of the Bill of Material provides the starter library version, which is later pulled by all services. That way, we can quickly update all services and introduce new capabilities without a hassle.
 
@@ -31,7 +31,7 @@ Having multiple services has its pros and cons. One of the problems we used to h
 - At 3:14 PM, the team changed the value of the Open telemetry property **OTEL_SDK_DISABLED=true**. The change is system-wide and applied in Vault. Unfortunately, The User service wasn’t restarted to pick up the new property.
 - At 9:52 PM, the first instance of the app crashing with out-of-memory errors. Kubernetes scheduler tried to recover it but failed to start up a new instance due to misconfiguration of properties introduced in the newest release.
 - Over the next 10 minutes, 2 more instances died, making the whole app unavailable to users.
-- At 10:02 PM, our external monitoring provider (Better Uptime) detected that the app didn’t work and informed us about downtime in 3 different places:
+- At 10:02 PM, our external monitoring provider ([Better Uptime](https://betterstack.com/uptime)) detected that the app didn’t work and informed us about downtime in 3 different places:
     - Incident update posted to Slack channel
     - Email to the on-call officer
     - SMS to the on-call officer
