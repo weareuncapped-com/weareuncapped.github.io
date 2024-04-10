@@ -11,7 +11,7 @@ categories:
   - kubernetes
   - downtime
 ---
-
+## And there we are
 It’s been almost five years since we launched Uncapped, and we have never had an outage. However, good things can’t last forever, and last week, for the first time, we experienced a technical issue preventing customers from registering.
 
 As we strive for complete transparency and a world-class engineering culture, we want to share what has happened and what we learned openly.
