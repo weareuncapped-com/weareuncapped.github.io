@@ -46,6 +46,7 @@ paginate: 10
 
 favicon: /assets/favicon.png
 google_analytics: G-KZCJ82TBF7
+enableDNT: false
 
 # Exclude from processing.
 # The following items will not be processed, by default.
