@@ -2,7 +2,14 @@
 layout: post
 title:  "We screwed up"
 date:   2024-04-10 18:27:00 +0200
+author: Kamil "Rudy" Dobrzynski
+banner: 
+  image: /assets/36d5ff50-0082-4137-a833-9ed74023146f.jpeg
+  opacity: 0.9
 categories: 
+  - java
+  - kubernetes
+  - downtime
 ---
 
 It’s been almost five years since we launched Uncapped, and we have never had an outage. However, good things can’t last forever, and last week, for the first time, we experienced a technical issue preventing customers from registering.
