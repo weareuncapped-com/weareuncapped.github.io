@@ -11,7 +11,7 @@ categories:
   - kubernetes
   - downtime
 ---
-## And there we are
+##  A Commitment to Transparency and Improvement 
 It’s been almost five years since we launched Uncapped, and we have never had an outage. However, good things can’t last forever, and last week, for the first time, we experienced a technical issue preventing customers from registering.
 
 As we strive for complete transparency and a world-class engineering culture, we want to share what has happened and what we learned openly.
@@ -40,7 +40,7 @@ Having multiple services has its pros and cons. One of the problems we used to h
 - At 5.04 8:00 AM, other engineers noticed information about issues and started investigating issues.
 - Engineers examining issues only see this message, which indicates property set on a per-service basis
 
-```jsx
+```properties
     Property: otel.resource.attributes
     Value: "service.name=users"
     Origin: System Environment Property "OTEL_RESOURCE_ATTRIBUTES"
