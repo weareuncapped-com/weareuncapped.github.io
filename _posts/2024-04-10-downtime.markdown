@@ -9,7 +9,7 @@ banner:
 categories: 
   - java
   - kubernetes
-  - downtime
+
 ---
 ##  A Commitment to Transparency and Improvement 
 It’s been almost five years since we launched [Uncapped](https://weareuncapped.com), and we have never had an outage. However, good things can’t last forever, and last week, for the first time, we experienced a technical issue preventing customers from registering.
